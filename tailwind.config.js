@@ -8,10 +8,10 @@ export default {
     extend: {
 
       colors:{
-        'BG-HOME': '#1C1C1C',
         'COLOR-LINE': '#363636',
         'BG-HEADER': 'rgba(0, 0, 0, 0.10)',
-        'BG-IMG': 'rgba(0, 250, 44, 0.2)',
+        'BG-DESCRIPTION': 'rgba(201, 233, 186, .1)',
+        'BG-IMG': 'green-500',
 
         'TEXT-COLOR-900': '#FFFFFF',
 
@@ -19,12 +19,20 @@ export default {
         'GIT-CARD2': '#009900'
       },
 
+      // backgroundImage: {
+      //   'BG-HOME': '9deg, rgba(77,155,156,1) 13%, rgba(163,148,207,1) 64%'
+      // },
+
+      fontFamily: {
+        'DESCRIPTION': 'Montserrat Alternates, sans-serif'
+      },
+
       height:{
         'BG-GITHUB-H': '31rem',
       },
 
       width:{
-        'BG-GITHUB-W': '20rem',
+        'BG-GITHUB-W': '40rem',
       },
 
       fontSize: {
