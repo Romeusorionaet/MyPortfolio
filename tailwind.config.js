@@ -16,7 +16,11 @@ export default {
         'TEXT-COLOR-900': '#FFFFFF',
 
         'GIT-CARD1': '#00ff00',
-        'GIT-CARD2': '#009900'
+        'GIT-CARD2': '#009900',
+
+        // 'STACK1': 'rgba(162,159,161,0.7401032702237522)',
+        // 'STACK2': 'rgba(92,92,92,1)',
+
       },
 
       // backgroundImage: {
@@ -24,15 +28,34 @@ export default {
       // },
 
       fontFamily: {
-        'DESCRIPTION': 'Montserrat Alternates, sans-serif'
+        'ROBOTO': 'Roboto, sans-serif'
       },
 
       height:{
-        'BG-GITHUB-H': '31rem',
+        '1': '1rem',
+        '2': '2rem',
+        '3': '3rem',
+        '4': '4rem',
+        '5': '5rem',
+        '6': '6rem',
+        '7': '7rem',
+        '8': '8rem',
+        '9': '9rem',
+        '25': '25rem',
+        '31': '31rem',
       },
 
       width:{
-        'BG-GITHUB-W': '40rem',
+        '1': '1rem',
+        '2': '2rem',
+        '3': '3rem',
+        '4': '4rem',
+        '5': '5rem',
+        '6': '6rem',
+        '7': '7rem',
+        '8': '8rem',
+        '9': '9rem',
+        '40': '40rem',
       },
 
       fontSize: {
@@ -43,7 +66,20 @@ export default {
         '3xl': '1.953rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
-      }
+      },
+
+      margin: {
+        '1': '1rem',
+        '2': '2rem',
+        '3': '3rem',
+        '4': '4rem',
+        '5': '5rem',
+        '6': '6rem',
+        '7': '7rem',
+        '8': '8rem',
+        '9': '9rem',
+      },
+
     },
   },
   plugins: [],

@@ -1,21 +1,21 @@
-import EmailIcon from '../assets/email-file-svgrepo-com.svg';
-import GearsSetUpIcon from '../assets/gears-setup-svgrepo-com.svg';
+import {AiOutlineMail} from 'react-icons/ai';
+import {GiGears} from 'react-icons/gi';
 
 export function Header(){
     return(
         <section 
-            className="h-28 bg-BG-HEADER flex items-center pl-10 justify-between border-b border-COLOR-LINE">
+            className="h-28  bg-BG-HEADER flex items-center pl-3 justify-between border-b border-COLOR-LINE">
             <div>
-                ROMEU SOARES DE SOUTO
+                <p>ROMEU SOARES DE SOUTO</p>
             </div>
 
-            <nav className="pr-10 flex gap-8 font-DESCRIPTION">
-                <span className='w-10'>
-                    <img src={EmailIcon} title="icon e-mail" />
+            <nav className="pr-3 flex gap-5 font-DESCRIPTION text-2xl">
+                <span>
+                    <AiOutlineMail />
                 </span>
 
-                <span className='w-10'>
-                    <img src={GearsSetUpIcon} title="icon setup" />
+                <span>
+                    <GiGears />
                 </span>
             </nav>
         </section>
