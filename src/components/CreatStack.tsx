@@ -18,7 +18,7 @@ export function CreatStack({description, file}: Props) {
               />
             </div>
 
-            <h3 className='mb-1 mt-4 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>React</h3>
+            <h3 className='mb-1 mt-4 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>Lorem</h3>
 
             <p className='h-40 text-justify text-zinc-900'>
               {description}
@@ -26,7 +26,7 @@ export function CreatStack({description, file}: Props) {
             <a 
             className="[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]"
             href='#'>
-                link
+                link da stack
             </a>
 
             <hr/>

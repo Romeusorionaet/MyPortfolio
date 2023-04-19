@@ -5,10 +5,10 @@ import {CarouselStacks} from '../components/CarouselStacks';
 import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
 
 export function Home() {
-  const gitCardLength = Array.from({length: 110}).sort()
+  const gitCardLength = Array.from({length: 110});
 
   return (
-    <section className="min-h-screen bg-gradient-to-t from-blue-600 to-zinc-900 text-TEXT-COLOR-900">
+    <section className="min-h-screen text-TEXT-COLOR-900">
 
       <Header />
 
@@ -44,15 +44,19 @@ export function Home() {
           </div>
         </section>
 
-        <section className='mt-10 mx-3.5 p-5 max-w-full'>
-          <AboutMe />
-        </section>
+        {/* <section className='mt-10 mx-3.5 p-5 max-w-full'>
+        </section> */}
 
-        <section className='mx-2 my-5 w-full flex items-center justify-between flex-col h-25'>
+        <section className='h-60 mt-5 mb-20 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16'>
 
-          <h2 className='text-2xl'>STACKS PRINCIPAIS</h2>
+          <div className='w-20'>
+            <AboutMe />
+          </div>
 
-          <CarouselStacks />
+          <div className='mt-20 text-center tablet:-mt-20'>
+            <h2 className='text-2xl mb-40'>STACKS PRINCIPAIS</h2>
+            <CarouselStacks />
+          </div>
 
         </section>
 

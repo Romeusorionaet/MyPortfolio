@@ -10,7 +10,7 @@ export default {
       colors:{
         'COLOR-LINE': '#363636',
         'BG-HEADER': 'rgba(0, 0, 0, 0.10)',
-        'BG-DESCRIPTION': 'rgba(201, 233, 186, .1)',
+        'BG-DESCRIPTION': 'rgba(163, 117, 545, .1)',
         'BG-IMG': 'green-500',
 
         'TEXT-COLOR-900': '#FFFFFF',
@@ -41,8 +41,11 @@ export default {
         '7': '7rem',
         '8': '8rem',
         '9': '9rem',
+        '15': '15rem',
         '25': '25rem',
         '31': '31rem',
+        '36': '36rem',
+        '60': '60rem',
       },
 
       width:{
@@ -55,6 +58,7 @@ export default {
         '7': '7rem',
         '8': '8rem',
         '9': '9rem',
+        '20': '20rem',
         '40': '40rem',
       },
 
@@ -80,6 +84,9 @@ export default {
         '9': '9rem',
       },
 
+      screens: {
+        'tablet': '800px',
+      }
     },
   },
   plugins: [],
