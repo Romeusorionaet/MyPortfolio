@@ -3,9 +3,22 @@ import {AboutMe} from '../components/AboutMe';
 import {GitCard} from '../components/GitCard';
 import {CarouselStacks} from '../components/CarouselStacks';
 import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
+import { useEffect, useState } from 'react';
 
 export function Home() {
+  const [githubRepos, setGithubRepos] = useState([])
+  
   const gitCardLength = Array.from({length: 110});
+
+  useEffect(()=>{
+    async function fetchGIthub(){
+      await fetch('https://api.github.com/users/Romeusorionaet/repos')
+      .then(response => response.json())
+      .then(data => setGithubRepos(data))
+    }
+    fetchGIthub()
+  },[])
+  
 
   return (
     <section className="min-h-screen text-TEXT-COLOR-900">
@@ -15,10 +28,6 @@ export function Home() {
       <main className='flex flex-col items-center overflow-hidden'>
 
         <section className='h-44 flex items-center justify-center text-center text-3xl'>
-          {/* 
-          *Aqui vai ser uma imagem com esse mesmo nome abaixo, criar no canvas.
-          *a imagem irá crescer junto com o tamanho do container
-          */}
           <p className='text-xl'>ROMEU SOARES <br/> DEVELOPER FRONTEND</p>
         </section>
 
@@ -44,9 +53,6 @@ export function Home() {
           </div>
         </section>
 
-        {/* <section className='mt-10 mx-3.5 p-5 max-w-full'>
-        </section> */}
-
         <section className='h-60 mt-5 mb-20 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16'>
 
           <div className='w-20'>
@@ -58,6 +64,22 @@ export function Home() {
             <CarouselStacks />
           </div>
 
+        </section>
+
+        <section className='bg-BG-HEADER my-20 px-2 pb-2 rounded-lg'>
+
+          <div className='text-center'>
+            <h2 className='text-2xl mb-1'>Meus Projetos Principais</h2>
+
+            <p>
+              {githubRepos.length} repositório publico no github 
+              <span className='text-zinc-300'>romeusoares</span>
+            </p>
+          </div>
+
+          <div className='bg-BG-DESCRIPTION h-25 rounded-lg mt-10'>
+
+          </div>
         </section>
 
       </main>
