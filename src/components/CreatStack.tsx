@@ -1,15 +1,15 @@
-interface Props {
+interface PropsStack {
     description: string;
     file: string;
 }
 
-export function CreatStack({description, file}: Props) {
+export function CreatStack({description, file}: PropsStack) {
 
     return(
         <div 
           className='h-80 w-80 my-6 p-2 text-center rounded-lg relative text-white'>
 
-            <div className="w-8 h-6 absolute -top-20 left-14 rounded-lg overflow-hidden">
+            <div data-aos="zoom-in-up" className="w-8 h-6 absolute -top-20 left-14 rounded-lg overflow-hidden">
                 {/* pensar em botar a imagem como background dessa div */}
               <img 
               className="w-screen h-full"

@@ -18,14 +18,13 @@ export default {
         'GIT-CARD1': '#00ff00',
         'GIT-CARD2': '#009900',
 
-        // 'STACK1': 'rgba(162,159,161,0.7401032702237522)',
-        // 'STACK2': 'rgba(92,92,92,1)',
+        'BG-DESCRIPTION-HOVER': 'rgba(163, 117, 545, .2)',
 
       },
 
-      // backgroundImage: {
-      //   'BG-HOME': '9deg, rgba(77,155,156,1) 13%, rgba(163,148,207,1) 64%'
-      // },
+      backgroundImage: {
+        'MOBILE-PREVIEW': "url('./src/assets/previewProjects/phoneBG.png')",
+      },
 
       fontFamily: {
         'ROBOTO': 'Roboto, sans-serif'
@@ -41,6 +40,7 @@ export default {
         '7': '7rem',
         '8': '8rem',
         '9': '9rem',
+        '10': '10rem',
         '15': '15rem',
         '25': '25rem',
         '31': '31rem',
@@ -53,6 +53,7 @@ export default {
         '2': '2rem',
         '3': '3rem',
         '4': '4rem',
+        '4.3': '4.3rem',
         '5': '5rem',
         '6': '6rem',
         '7': '7rem',
@@ -60,6 +61,7 @@ export default {
         '9': '9rem',
         '20': '20rem',
         '40': '40rem',
+        '60': '60rem',
       },
 
       fontSize: {
@@ -86,7 +88,14 @@ export default {
 
       screens: {
         'tablet': '800px',
+        'desktop': '1020px',
+      },
+
+      opacity: {
+        '0': '0',
+        '1': '1',
       }
+
     },
   },
   plugins: [],

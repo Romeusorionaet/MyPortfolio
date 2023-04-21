@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.iconsFooter {
+    @apply hover:scale-x-110 shadow-lg;
+}
+
+.gitCardAnimation {
+    @apply flex justify-center w-40 flex-wrap overflow-hidden pt-2 rounded-full;
+}

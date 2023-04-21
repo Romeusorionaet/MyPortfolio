@@ -40,7 +40,12 @@ export function CarouselStacks() {
     )
 
     return(
-      <div className="wrapper">
+      <div 
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" 
+        className="wrapper"
+      >
         <div className="scene">
           <div className="carousel keen-slider" ref={sliderStacks}>
             
