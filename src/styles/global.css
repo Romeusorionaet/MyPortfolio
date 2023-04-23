@@ -9,3 +9,7 @@
 .gitCardAnimation {
     @apply flex justify-center w-40 flex-wrap overflow-hidden pt-2 rounded-full;
 }
+
+.effectHover {
+    @apply hover:bg-blue-600 p-1 rounded-lg hover:shadow-lg active:bg-blue-800
+}

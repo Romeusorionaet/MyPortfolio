@@ -1,9 +1,8 @@
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
+import {useEffect, useState} from 'react';
 
 export function AboutMe() {
-
-
     const [sliderDscription] = useKeenSlider({
         mode: "free-snap",
         slides: {
@@ -13,25 +12,37 @@ export function AboutMe() {
         vertical: true,
       })
 
+    // function typeWriter(element: string) {
+    //     const textoArray = element.innerHTML.splite('')
+    //     element.innerHTML = '';
+    //     textoArray.forEach((letter: string, i: number)=>{
+    //         setTimeout(()=> element.innerHTML += letter, 75 * i);
+    //     });
+    // }
+
+    // console.log(text)
+    // typeWriter(text)
+
     return(
         <div ref={sliderDscription} className="keen-slider text-justif h-25 tablet:h-36">
-            <div className="keen-slider__slide bg-BG-DESCRIPTION rounded-lg p-4 min-h-screen">
-                <p>
-                    Lorem Ipsum é simplesmente uma simulação de texto da 
-                    indústria tipográfica e de impressos, e vem sendo utilizado 
-                    desde o século XVI, quando um impressor desconhecido 
-                    pegou uma bandeja de tipos e os embaralhou para fazer um livro de 
-                    modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, 
-                    como também ao salto para a editoração eletrônica, permanecendo...
+            <div 
+                className="keen-slider__slide bg-BG-DESCRIPTION rounded-lg p-4 ">
+                <p className='animate-[type]'>
+                Eu sou [seu nome], [sua profissão/ocupação], com experiência em [áreas relevantes]. 
+                Sou apaixonado por [seus interesses/hobbies], e sempre estou em busca de novas oportunidades 
+                para aprender e crescer. Minhas habilidades incluem [suas habilidades relevantes].
                 </p>
             </div>
-            <div className="keen-slider__slide bg-BG-DESCRIPTION shadow-lg rounded-lg p-4">
+            <div 
+                className="keen-slider__slide bg-BG-DESCRIPTION shadow-lg rounded-lg p-4">
                 <p>
-                    Lorem Ipsum é simplesmente uma simulação de texto da 
-                    indústria tipográfica e de impressos, e vem sendo utilizado 
-                    desde o século XVI, quando um impressor desconhecido 
-                    pegou uma bandeja de tipos e os embaralhou para fazer um livro de 
-                    modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos...
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    kjlsbdhefrgiu isdeuhfrgi rhegiuerh g
+                    
                 </p>
             </div>
         </div>

@@ -1,16 +1,17 @@
 interface PropsStack {
     description: string;
     file: string;
+    link: string;
+    title: string;
 }
 
-export function CreatStack({description, file}: PropsStack) {
+export function CreatStack({description, file, link, title}: PropsStack) {
 
     return(
         <div 
           className='h-80 w-80 my-6 p-2 text-center rounded-lg relative text-white'>
 
             <div data-aos="zoom-in-up" className="w-8 h-6 absolute -top-20 left-14 rounded-lg overflow-hidden">
-                {/* pensar em botar a imagem como background dessa div */}
               <img 
               className="w-screen h-full"
               src={file} 
@@ -18,18 +19,18 @@ export function CreatStack({description, file}: PropsStack) {
               />
             </div>
 
-            <h3 className='mb-1 mt-4 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>Lorem</h3>
+            <h3 className='mb-1 mt-2 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>{title}</h3>
 
-            <p className='h-40 text-justify text-zinc-900'>
-              {description}
-            </p>
+            <div className=" h-9 mb-4">
+              <p className='h-40 text-justify text-zinc-900'>
+                {description}
+              </p>
+            </div>
             <a 
-            className="[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]"
-            href='#'>
-                link da stack
+            className="shadow-lg border-b-2 border-blue-600"
+            href={link} target='blank'>
+                Documentation
             </a>
-
-            <hr/>
           </div> 
     )
 }

@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 [class^="card"],
@@ -36,6 +35,6 @@ body {
   position: absolute;
   width: 240px;
   left: 10px;
-  height: 220px;
+  height: 260px;
   border-radius: 8%
 }

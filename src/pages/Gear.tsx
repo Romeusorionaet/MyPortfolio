@@ -2,18 +2,16 @@ import { Header } from "../components/Header" ;
 import { Footer } from "../components/Footer" ;
 import { CardGear } from "../components/CardGear" ;
 
-import img from '../assets/logo/Romeusoares.png';
-
 export function Gear() {
 
     return(
-        <div className="min-h-screen text-TEXT-COLOR-900">
+        <div className="min-h-screen bg-zinc-700">
 
             <Header />
 
-            <h1 className="ml-1 mt-2">Meu SetUp</h1>
+            <h1 className="ml-1 mt-2 tablet:px-36">Meu SetUp</h1>
 
-            <section className="mb-10 flex gap-6 flex-wrap justify-center p-8">
+            <section className="mb-10 flex gap-6 flex-wrap justify-center px-4 tablet:px-20">
                 <CardGear
                     image={'https://th.bing.com/th/id/OIP.Fsy9ajZBAUKuJV_YBSGjcQHaIE?pid=ImgDet&rs=1'} 
                     title={'Monitor'}
@@ -77,6 +75,34 @@ export function Gear() {
                     title={'Gabinite'}
                     description="Gabinete Gamer."
                     link={'https://th.bing.com/th/id/OIP.DhDYJVtTL2EFXZH-MswM0QHaHa?pid=ImgDet&rs=1'}
+                /> 
+
+                <CardGear
+                    image={'https://www.umpoukodetudo.com.br/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/i/m/import-3.jpg'} 
+                    title={'Teclado'}
+                    description="Teclado Gamer Mecânico, USB, RGB, Switch azul, G Pro k7 Plus, 67703, Fortrek - CX 1 UN."
+                    link={'https://www.umpoukodetudo.com.br/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/i/m/import-3.jpg'}
+                />
+
+                <CardGear
+                    image={'https://th.bing.com/th/id/OIP.3V1IXPhdmMPM7MiTd6SXzQHaHa?pid=ImgDet&rs=1'} 
+                    title={'Mouse'}
+                    description="Mouse Redragon Cobra, M711, preto com LED RGB."
+                    link={'https://th.bing.com/th/id/OIP.3V1IXPhdmMPM7MiTd6SXzQHaHa?pid=ImgDet&rs=1'}
+                />
+
+                <CardGear
+                    image={'https://th.bing.com/th/id/R.4c77bca88aa959fe7ced79f274a66a2e?rik=4jowYmGSSHgthg&pid=ImgRaw&r=0'} 
+                    title={'Headset'}
+                    description="Headset Gamer Havit H2002D - Conector 3.5mm - HV-H2002D."
+                    link={'https://th.bing.com/th/id/R.4c77bca88aa959fe7ced79f274a66a2e?rik=4jowYmGSSHgthg&pid=ImgRaw&r=0'}
+                />
+
+                <CardGear
+                    image={'https://img.kalunga.com.br/fotosdeprodutos/145014z.jpg'} 
+                    title={'Webcam'}
+                    description="Webcam Full HD C922 Pro Stream - Logitech CX 1 UN."
+                    link={'https://img.kalunga.com.br/fotosdeprodutos/145014z.jpg'}
                 />
 
             </section>

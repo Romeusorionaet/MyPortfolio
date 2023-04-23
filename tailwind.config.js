@@ -19,7 +19,6 @@ export default {
         'GIT-CARD2': '#009900',
 
         'BG-DESCRIPTION-HOVER': 'rgba(163, 117, 545, .2)',
-
       },
 
       backgroundImage: {
@@ -94,6 +93,16 @@ export default {
       opacity: {
         '0': '0',
         '1': '1',
+      },
+
+      animation: {
+        'type': 'type 2s steps(10)',
+      },
+
+      keyframes: {
+        type: {
+          '50%': 'bg-red-500',
+        }
       }
 
     },

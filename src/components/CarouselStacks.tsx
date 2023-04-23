@@ -51,61 +51,70 @@ export function CarouselStacks() {
             
             <div className="carousel__cell card ">
               <CreatStack
+                title={'React'}
+                link={'https://react.dev/'}
                 file={reactLogo}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                React é uma biblioteca JavaScript para construir interfaces de usuário reativas e escaláveis. 
+                É amplamente utilizado na criação de aplicações web modernas, com componentes e atualização eficiente do DOM.' 
               />
             </div>
             
             <div className="carousel__cell card ">
               <CreatStack
+                title={'Typescript'}
+                link={'https://www.typescriptlang.org/docs/'}
                 file={typescriptLogo}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                TypeScript é uma linguagem de programação de código aberto que se baseia em 
+                JavaScript e adiciona recursos de tipagem estática e outros recursos avançados, 
+                como interfaces e classes.' 
               />
             </div>
             
             <div className="carousel__cell card ">
               <CreatStack
+              title={'Javascript'}
+                link={'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'}
                 file={javascriptLogo}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                JavaScript é uma linguagem de programação de alto nível que permite a criação de páginas web 
+                dinâmicas e interativas. É amplamente utilizado tanto no lado do cliente quanto do servidor.' 
               />
             </div>
             
             <div className="carousel__cell card ">
               <CreatStack
+              title={'HTML'}
+                link={'https://developer.mozilla.org/pt-BR/docs/Web/HTML'}
                 file={htmlLogo}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                HTML é uma linguagem de marcação usada para criar páginas web, permitindo a estruturação do 
+                conteúdo e a inclusão de elementos como imagens, links e formulários. É a base da web moderna.' 
               />
             </div>
 
             <div className="carousel__cell card ">
               <CreatStack
+              title={'CSS'}
+                link={'https://developer.mozilla.org/pt-BR/docs/Web/CSS'}
                 file={cssLogo}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                CSS é uma linguagem de estilo usada para definir o layout, aparência e comportamento 
+                visual de elementos em uma página web. É usado em conjunto com HTML e JavaScript para 
+                criar interfaces de usuário responsivas.' 
               />
             </div>
 
             <div className="carousel__cell card ">
               <CreatStack
+              title={'Tailwindcss'}
+                link={'https://tailwindcss.com/'}
                 file={tailwindcss}
                 description='
-                  Lorem Ipsum é simplesmente uma simulação de texto da 
-                  indústria tipográfica e de impressos, e vem sendo utilizado 
-                  desde o século XVI' 
+                Tailwind CSS é uma biblioteca de classes CSS pré-definidas que permite a criação de 
+                estilos de página web de forma rápida e consistente. É conhecido por sua abordagem de 
+                "utilitários" e sua facilidade de uso.' 
               />
             </div>
 
