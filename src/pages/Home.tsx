@@ -1,6 +1,5 @@
 import {Header} from '../components/Header';
 import {Footer} from '../components/Footer';
-import {AboutMe} from '../components/AboutMe';
 import {GitCard} from '../components/GitCard';
 import {CarouselStacks} from '../components/CarouselStacks';
 import {Project} from '../components/Project';
@@ -10,6 +9,8 @@ import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {AiOutlineMail} from 'react-icons/ai';
+import Typing from 'react-typing-animation';
 
 export function Home() {
   const [githubRepos, setGithubRepos] = useState([])
@@ -34,9 +35,16 @@ export function Home() {
 
       <main className='flex flex-col items-center overflow-hidden'>
 
-        <section className='h-44 flex items-center justify-center text-center text-3xl'>
-          <p className='text-xl'>ROMEU SOARES <br/> DEVELOPER FRONTEND</p>
-        </section>
+        <div className='h-44 flex items-center justify-center text-center text-3xl'>
+
+        <Typing>
+        <Typing.Backspace count={20} />
+          <p className='text-xl'>
+            ROMEU SOARES <br/> DEVELOPER FRONTEND
+          </p>
+        </Typing>
+          
+        </div>
 
         <section className="gitCardAnimation h-31">
           {
@@ -61,31 +69,62 @@ export function Home() {
         </section>
 
         <section 
-          className='h-60 mt-5 mb-20 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
+          className='my-15 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
 
           <div 
             data-aos="fade-right"
-            className='w-20'>
-            <AboutMe />
+            className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-8'>
+
+            <p>
+                Eu sou Romeu soares, sou Front-end Web Developer junior, com experiência nas principais ferramentas
+                atual no mercado como, react, typescript e tailwindcss. 
+                Sou apaixonado pela area, e sempre estou em busca de novas oportunidades 
+                para aprender e crescer.
+            </p>
+
+            <p>
+              Resumo sobre como consegui meus conhecimentos na área.
+              Para estágio inícial da minha jornada concluí um curso de web design moderno
+              com conceitos básicos sobre HTML, CSS e JavaScript. Após isso iniciei e 
+              concluí com sucesso o programa Explorer da empresa de educação em tecnologia Rocketseat.
+              Nela consegui definir meus objetivos e propósitos planejando minha trajetória. 
+              
+
+              Avancei meus conhecimentos nos conceitos básicos que me permitiu realizar projetos 
+              mais complexos. Aprendi a montar uma API e utilizar banco de dados 
+              (SQL, SQLite). Tudo isso realizando projetos pessoais simulando o mercado.
+              <br/>
+                  
+              Isso me permitiu encontrar soluções e aprender a utilizar novas ferramentas 
+              atuais no mercado como por exemplo a utilização do TypeScript e Tailwindcss.
+              
+            </p>
+
           </div>
 
           <div 
             className='mt-20 text-center tablet:-mt-20 active:bg-gradient-to-t from-indigo-400 rounded-full pt-6'>
-            <h2 className='text-2xl mb-40'>STACKS PRINCIPAIS</h2>
+            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
             <CarouselStacks />
           </div>
 
         </section>
 
         <section 
-          className='bg-BG-HEADER my-20 tablet:-mt-20 pb-6 rounded-lg w-60 text-center '>
+          className='bg-BG-HEADER my-20 tablet:-mt-20 pb-6 rounded-lg w-60 text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>
 
             <p>
-              {githubRepos.length} repositório publico no github 
-              <a className='text-zinc-300' href='#'> romeusoares</a>
+              {githubRepos.length} repositório publico no github
+              <a 
+              className='text-zinc-300 ml-0.5' 
+              href='https://github.com/Romeusorionaet'
+              target='blank'
+              > 
+                romeusoares
+              </a>
             </p>
           </div>
 
@@ -105,6 +144,17 @@ export function Home() {
             AOSanimation='flip-right'
           />
           
+        </section>
+
+        <section 
+            className="flex mb-4 justify-center items-center gap-2 flex-col tablet:flex-row tablet:gap-8">
+            <AiOutlineMail className="text-9xl"/>
+
+            <a 
+            className='handle-button'
+            href="mailto:romeuindexjs9@gmail.com">
+                Clique aqui e envie um email
+            </a>
         </section>
 
         <section className="gitCardAnimation h-2">

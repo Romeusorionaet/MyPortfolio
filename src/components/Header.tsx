@@ -1,6 +1,4 @@
-import {AiOutlineMail} from 'react-icons/ai';
 import {GiGears} from 'react-icons/gi';
-
 import {useNavigate} from 'react-router-dom';
 
 export function Header(){
@@ -18,14 +16,7 @@ export function Header(){
 
             <nav className=" flex gap-5 tablet:gap-16 font-DESCRIPTION text-2xl">
                 <button 
-                className='effectHover'
-                onClick={()=>{navigate('/Email')}}
-                >
-                    <AiOutlineMail />
-                </button>
-
-                <button 
-                className='effectHover'
+                className='handle-button'
                 onClick={()=>{navigate('/Gear')}}
                 >
                     <GiGears />

@@ -45,6 +45,7 @@ export default {
         '31': '31rem',
         '36': '36rem',
         '60': '60rem',
+        '70': '70rem',
       },
 
       width:{
@@ -74,6 +75,7 @@ export default {
       },
 
       margin: {
+        '0.5': '0.5rem',
         '1': '1rem',
         '2': '2rem',
         '3': '3rem',
@@ -83,6 +85,7 @@ export default {
         '7': '7rem',
         '8': '8rem',
         '9': '9rem',
+        '15': '15rem',
       },
 
       screens: {
@@ -94,16 +97,6 @@ export default {
         '0': '0',
         '1': '1',
       },
-
-      animation: {
-        'type': 'type 2s steps(10)',
-      },
-
-      keyframes: {
-        type: {
-          '50%': 'bg-red-500',
-        }
-      }
 
     },
   },
