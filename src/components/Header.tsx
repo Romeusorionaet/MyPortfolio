@@ -8,7 +8,7 @@ export function Header(){
         <section 
             className="h-28 bg-blue-700 flex items-center p-3 tablet:px-40 justify-between border-b border-COLOR-LINE">
             <button 
-            className='effectHover'
+            className='handle-button'
             onClick={()=>navigate('/')}
             >
                 ROMEU SOARES DE SOUTO

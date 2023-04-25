@@ -69,17 +69,17 @@ export function Home() {
         </section>
 
         <section 
-          className='my-15 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
+          className='my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
 
           <div 
             data-aos="fade-right"
-            className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-8'>
+            className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
 
             <p>
-                Eu sou Romeu soares, sou Front-end Web Developer junior, com experiência nas principais ferramentas
-                atual no mercado como, react, typescript e tailwindcss. 
-                Sou apaixonado pela area, e sempre estou em busca de novas oportunidades 
-                para aprender e crescer.
+              Eu sou Romeu soares, sou Front-end Web Developer junior, com experiência nas principais ferramentas
+              atual no mercado como, React, Typescript e Tailwindcss. 
+              Sou apaixonado pela area, e sempre estou em busca de novas oportunidades 
+              para aprender e crescer.
             </p>
 
             <p>
@@ -88,22 +88,24 @@ export function Home() {
               com conceitos básicos sobre HTML, CSS e JavaScript. Após isso iniciei e 
               concluí com sucesso o programa Explorer da empresa de educação em tecnologia Rocketseat.
               Nela consegui definir meus objetivos e propósitos planejando minha trajetória. 
-              
+            </p>
 
+            <p>
               Avancei meus conhecimentos nos conceitos básicos que me permitiu realizar projetos 
-              mais complexos. Aprendi a montar uma API e utilizar banco de dados 
-              (SQL, SQLite). Tudo isso realizando projetos pessoais simulando o mercado.
-              <br/>
-                  
+              mais complexos. Aprendi a montar e consumir uma API e utilizar banco de dados. Tudo isso realizando projetos pessoais simulando o mercado.
+            </p>
+
+            <p>  
               Isso me permitiu encontrar soluções e aprender a utilizar novas ferramentas 
               atuais no mercado como por exemplo a utilização do TypeScript e Tailwindcss.
-              
+              E não paro por aqui, continuo aprendendo, me atualizando para está sempre apto a 
+              novo desafios.
             </p>
 
           </div>
 
           <div 
-            className='mt-20 text-center tablet:-mt-20 active:bg-gradient-to-t from-indigo-400 rounded-full pt-6'>
+            className='mt-20 text-center tablet:-mt-20 active:bg-gradient-to-t from-indigo-400 rounded-full pr-6'>
             <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
             <CarouselStacks />
           </div>
@@ -117,7 +119,7 @@ export function Home() {
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>
 
             <p>
-              {githubRepos.length} repositório publico no github
+              {githubRepos.length} repositório público no github
               <a 
               className='text-zinc-300 ml-0.5' 
               href='https://github.com/Romeusorionaet'
@@ -152,7 +154,7 @@ export function Home() {
 
             <a 
             className='handle-button'
-            href="mailto:romeuindexjs9@gmail.com">
+            href="mailto:romeusoares14569@gmail.com">
                 Clique aqui e envie um email
             </a>
         </section>
