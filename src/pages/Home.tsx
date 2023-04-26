@@ -105,7 +105,7 @@ export function Home() {
           </div>
 
           <div 
-            className='mt-20 text-center tablet:-mt-20 active:bg-gradient-to-t from-indigo-400 rounded-full pr-6'>
+            className='mt-20 text-center tablet:-mt-20 pr-6'>
             <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
             <CarouselStacks />
           </div>
@@ -113,7 +113,7 @@ export function Home() {
         </section>
 
         <section 
-          className='bg-BG-HEADER my-20 tablet:-mt-20 pb-6 rounded-lg w-60 text-center'>
+          className='bg-BG-HEADER tablet:px-10 my-20 tablet:-mt-20 pb-6 rounded-lg text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>
@@ -130,22 +130,32 @@ export function Home() {
             </p>
           </div>
 
-          <Project 
-            title='Explorer Food' 
-            link={'https://gccfindafriend.netlify.app'}
-            previewDesktop={'https://bit.ly/3Ll6Ga0'}
-            previewMobile={'https://bit.ly/3ApRiCF'}
-            AOSanimation='zoom-in-left'
-          />
-            
-          <Project 
-            title='Find a Friend' 
-            link={'https://gccfindafriend.netlify.app'}
-            previewDesktop={'https://bit.ly/3LelSFM'}
-            previewMobile={'https://bit.ly/3LriNT3'}
-            AOSanimation='flip-right'
-          />
-          
+          <div className='flex flex-wrap tablet:gap-12 gap-4'>
+            <Project 
+              title='Explorer Food' 
+              link={'https://myfrontendfood.netlify.app'}
+              previewDesktop={'https://bit.ly/3Ll6Ga0'}
+              previewMobile={'https://bit.ly/3ApRiCF'}
+              AOSanimation='zoom-in-left'
+            />
+              
+            <Project 
+              title='Find a Friend' 
+              link={'https://gccfindafriend.netlify.app'}
+              previewDesktop={'https://bit.ly/3LelSFM'}
+              previewMobile={'https://bit.ly/3LriNT3'}
+              AOSanimation='flip-right'
+            />
+
+            <Project 
+              title='Rocket Movie' 
+              link={'https://movienote.netlify.app'}
+              previewDesktop={'https://bit.ly/3NaXLJu'}
+              previewMobile={'https://bit.ly/41Bbm10'}
+              AOSanimation='zoom'
+            />
+          </div>
+
         </section>
 
         <section 

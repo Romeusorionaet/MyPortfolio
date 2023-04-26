@@ -62,6 +62,7 @@ export default {
         '20': '20rem',
         '40': '40rem',
         '60': '60rem',
+        '70': '70rem',
       },
 
       fontSize: {
