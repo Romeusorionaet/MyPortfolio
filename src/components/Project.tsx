@@ -34,7 +34,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
             </div>
 
             <button 
-            className="rounded-full w-8 shadow-lg border-t-2 hover:border-black active:border-green-400">
+            className="rounded-full w-8 shadow-lg border-t-2 hover:border-black delay-200 active:border-green-400">
               <a href={link} target="blank">{title}</a>
             </button>
         </div>

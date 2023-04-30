@@ -76,7 +76,7 @@ export function Home() {
             className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
 
             <p>
-              Eu sou Romeu soares, sou Front-end Web Developer junior, com experiência nas principais ferramentas
+              Eu sou Romeu soares, tenho 24 anos e sou Front-end Web Developer júnior, com experiência nas principais ferramentas
               atual no mercado como, React, Typescript e Tailwindcss. 
               Sou apaixonado pela area, e sempre estou em busca de novas oportunidades 
               para aprender e crescer.
@@ -97,9 +97,9 @@ export function Home() {
 
             <p>  
               Isso me permitiu encontrar soluções e aprender a utilizar novas ferramentas 
-              atuais no mercado como por exemplo a utilização do TypeScript e Tailwindcss.
+              atuais como por exemplo a utilização do TypeScript e Tailwindcss.
               E não paro por aqui, continuo aprendendo, me atualizando para está sempre apto a 
-              novo desafios.
+              novos desafios.
             </p>
 
           </div>
