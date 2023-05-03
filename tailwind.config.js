@@ -22,7 +22,7 @@ export default {
       },
 
       backgroundImage: {
-        'MOBILE-PREVIEW': "url('./src/assets/previewProjects/phoneBG.png')",
+        'MOBILE-PREVIEW': "url('https://www.f-droid.org/assets/phone-frame.png')",
       },
 
       fontFamily: {
@@ -38,6 +38,7 @@ export default {
         '6': '6rem',
         '7': '7rem',
         '8': '8rem',
+        '8.5': '8.5rem',
         '9': '9rem',
         '10': '10rem',
         '15': '15rem',
@@ -53,7 +54,7 @@ export default {
         '2': '2rem',
         '3': '3rem',
         '4': '4rem',
-        '4.3': '4.3rem',
+        '4.6': '4.6rem',
         '5': '5rem',
         '6': '6rem',
         '7': '7rem',

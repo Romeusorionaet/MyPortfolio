@@ -25,7 +25,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
                 className="w-6 h-10 absolute bottom-0 -right-2 bg-MOBILE-PREVIEW bg-cover bg-no-repeat bg-center flex"
               >
                  <img 
-                  className=' w-4.3 h-8 m-auto ' 
+                  className=' w-4.6 h-8.5 m-auto ' 
                   src={previewMobile} 
                   alt='projeto preview mobile' 
                   />
