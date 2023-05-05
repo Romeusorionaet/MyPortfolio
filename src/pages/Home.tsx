@@ -76,28 +76,25 @@ export function Home() {
             className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
 
             <p>
-              Eu sou Romeu soares, tenho 24 anos e sou Front-end Web Developer júnior, com experiência nas principais ferramentas
-              atual no mercado como, React, Typescript e Tailwindcss. 
-              Sou apaixonado pela area, e sempre estou em busca de novas oportunidades 
+              Eu sou Romeu soares, tenho 24 anos e sou Web Developer Frontend júnior, com experiência nas principais ferramentas
+              atual no mercado. Sou apaixonado pela área, e sempre estou em busca de novas oportunidades 
               para aprender e crescer.
             </p>
 
             <p>
-              Resumo sobre como consegui meus conhecimentos na área.
+              Resumindo sobre como consegui meus conhecimentos na área.
               Para estágio inícial da minha jornada concluí um curso de web design moderno
               com conceitos básicos sobre HTML, CSS e JavaScript. Após isso iniciei e 
               concluí com sucesso o programa Explorer da empresa de educação em tecnologia Rocketseat.
               Nela consegui definir meus objetivos e propósitos planejando minha trajetória. 
-            </p>
-
-            <p>
               Avancei meus conhecimentos nos conceitos básicos que me permitiu realizar projetos 
-              mais complexos. Aprendi a montar e consumir uma API e utilizar banco de dados. Tudo isso realizando projetos pessoais simulando o mercado.
+              mais complexos. Aprendi a montar e consumir uma API RESTful e utilizar banco de dados. 
+              Tudo isso realizando projetos pessoais simulando o mercado.
             </p>
 
             <p>  
               Isso me permitiu encontrar soluções e aprender a utilizar novas ferramentas 
-              atuais como por exemplo a utilização do TypeScript e Tailwindcss.
+              atuais como por exemplo a utilização do TypeScript, Nextjs e Tailwindcss.
               E não paro por aqui, continuo aprendendo, me atualizando para está sempre apto a 
               novos desafios.
             </p>
