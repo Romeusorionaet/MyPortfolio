@@ -1,8 +1,8 @@
 import {Header} from '../components/Header';
 import {Footer} from '../components/Footer';
 import {GitCard} from '../components/GitCard';
-import {CarouselStacks} from '../components/CarouselStacks';
 import {Project} from '../components/Project';
+import {About} from '../components/About';
 
 import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
 import bgInProduction from '../assets/bg-InProduction.jpg'
@@ -30,7 +30,7 @@ export function Home() {
   },[]);
 
   return (
-    <div className="min-h-screen text-TEXT-COLOR-900 pt-20">
+    <div className="min-h-screen text-white-900 pt-20">
 
       <Header />
 
@@ -38,16 +38,16 @@ export function Home() {
 
         <div className='h-44 flex items-center justify-center text-center text-3xl'>
 
-        <Typing>
-        <Typing.Backspace count={20} />
-          <p className='text-xl'>
-            ROMEU SOARES <br/> DEVELOPER FRONTEND
-          </p>
-        </Typing>
+          <Typing>
+          <Typing.Backspace count={20} />
+            <p className='text-xl'>
+              ROMEU SOARES <br/> DEVELOPER FRONTEND
+            </p>
+          </Typing>
           
         </div>
 
-        <section className="gitCardAnimation h-31">
+        <section className="gitCardAnimation">
           {
             Array.from({length: 43}).map((_, index)=>{
               return(
@@ -71,52 +71,12 @@ export function Home() {
           </div>
         </section>
 
-        <section 
-          className='relative my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
-
-          <div 
-            data-aos="fade-right"
-            className='w-20 z-10 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
-
-            <p>
-              Eu sou Romeu soares, tenho 24 anos e sou Web Developer Frontend júnior, com experiência nas principais ferramentas
-              atual no mercado. Sou apaixonado pela área, e sempre estou em busca de novas oportunidades 
-              para aprender e crescer.
-            </p>
-
-            <p>
-              Resumindo sobre como consegui meus conhecimentos na área.
-              Para estágio inícial da minha jornada concluí um curso de web design moderno
-              com conceitos básicos sobre HTML, CSS e JavaScript. Após isso iniciei e 
-              concluí com sucesso o programa Explorer da empresa de educação em tecnologia Rocketseat.
-              Nela consegui definir meus objetivos e propósitos planejando minha trajetória. 
-              Avancei meus conhecimentos nos conceitos básicos que me permitiu realizar projetos 
-              mais complexos. Aprendi a montar e consumir uma API RESTful e utilizar banco de dados. 
-              Tudo isso realizando projetos pessoais simulando o mercado.
-            </p>
-
-            <p>  
-              Isso me permitiu encontrar soluções e aprender a utilizar novas ferramentas 
-              atuais como por exemplo a utilização do TypeScript, Nextjs e Tailwindcss.
-              E não paro por aqui, continuo aprendendo, me atualizando para está sempre apto a 
-              novos desafios.
-            </p>
-
-          </div>
-
-          <div 
-            className='mt-20 text-center tablet:-mt-20 pr-6 z-10'>
-            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
-            <CarouselStacks />
-          </div>
-
-          <div className="absolute h-[526px] w-[526px] rounded-full bg-cyan-900 opacity-30 blur-3xl" />
-
+        <section>
+          <About />
         </section>
 
-
         <section 
-          className='bg-BG-HEADER tablet:px-10 my-20 tablet:-mt-20 pb-6 rounded-lg text-center'>
+          className='bg-rgba-1 tablet:px-10 my-20 tablet:-mt-20 pb-6 rounded-lg text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>

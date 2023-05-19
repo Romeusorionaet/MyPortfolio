@@ -6,7 +6,7 @@ export function Header(){
 
     return(
         <section 
-            className="h-[100] w-full bg-blue-700 flex items-center p-3 tablet:px-40 justify-between border-b border-COLOR-LINE fixed top-0 z-20">
+            className="w-full bg-blue-700 flex items-center p-3 tablet:px-40 justify-between fixed top-0 z-20">
             <button 
             className='handle-button'
             onClick={()=>navigate('/')}

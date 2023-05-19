@@ -10,7 +10,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
 
     return(
         <div 
-            className='bg-BG-DESCRIPTION rounded-3xl mt-10 w-20 mx-auto pb-2'>
+            className='bg-rgba-2 rounded-3xl mt-10 w-20 mx-auto pb-2'>
 
             <div className='h-15 p-4 relative'>
 

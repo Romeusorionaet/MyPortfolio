@@ -8,7 +8,7 @@ import {
 export function Footer() {
 
     return(
-        <div className="bg-blue-700 h-28 flex items-center place-content-center">
+        <div className="bg-blue-700 p-3 flex items-center place-content-center">
             <nav>
                 <ul className='flex gap-16 text-3xl'>
                     <li className='iconsFooter'><a href='https://github.com/Romeusorionaet' target='blank'><AiFillGithub /></a></li>
