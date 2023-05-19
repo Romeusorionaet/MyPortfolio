@@ -5,6 +5,7 @@ import {CarouselStacks} from '../components/CarouselStacks';
 import {Project} from '../components/Project';
 
 import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
+import bgInProduction from '../assets/bg-InProduction.jpg'
 
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
@@ -29,7 +30,7 @@ export function Home() {
   },[]);
 
   return (
-    <div className="min-h-screen text-TEXT-COLOR-900">
+    <div className="min-h-screen text-TEXT-COLOR-900 pt-20">
 
       <Header />
 
@@ -48,12 +49,14 @@ export function Home() {
 
         <section className="gitCardAnimation h-31">
           {
-            Array.from({length: 110}).map((item, index)=>{
+            Array.from({length: 43}).map((_, index)=>{
               return(
-                <GitCard 
-                key={String(index)} 
-                index={index} 
-                />
+                <div key={String(index)} className='opacity-10'>
+                  <GitCard 
+                  key={String(index)} 
+                  index={index} 
+                  />
+                </div>
               )
             }) 
           }
@@ -69,11 +72,11 @@ export function Home() {
         </section>
 
         <section 
-          className='my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
+          className='relative my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
 
           <div 
             data-aos="fade-right"
-            className='w-20 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
+            className='w-20 z-10 bg-BG-DESCRIPTION rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
 
             <p>
               Eu sou Romeu soares, tenho 24 anos e sou Web Developer Frontend júnior, com experiência nas principais ferramentas
@@ -102,12 +105,15 @@ export function Home() {
           </div>
 
           <div 
-            className='mt-20 text-center tablet:-mt-20 pr-6'>
+            className='mt-20 text-center tablet:-mt-20 pr-6 z-10'>
             <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
             <CarouselStacks />
           </div>
 
+          <div className="absolute h-[526px] w-[526px] rounded-full bg-cyan-900 opacity-30 blur-3xl" />
+
         </section>
+
 
         <section 
           className='bg-BG-HEADER tablet:px-10 my-20 tablet:-mt-20 pb-6 rounded-lg text-center'>
@@ -150,6 +156,12 @@ export function Home() {
               previewDesktop={'https://bit.ly/3NaXLJu'}
               previewMobile={'https://bit.ly/41Bbm10'}
               AOSanimation='zoom'
+            />
+
+            <Project 
+              title='Em produção' 
+              previewDesktop={bgInProduction}
+              previewMobile={bgInProduction}
             />
           </div>
 

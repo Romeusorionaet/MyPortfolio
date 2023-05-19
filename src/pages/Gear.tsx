@@ -5,8 +5,8 @@ import { CardGear } from "../components/CardGear" ;
 export function Gear() {
 
     return(
-        <div className="min-h-screen bg-zinc-700">
-
+        <div className="min-h-screen bg-zinc-700 pt-20">
+            
             <Header />
 
             <h1 className="ml-1 mt-2 tablet:px-36">Meu SetUp</h1>

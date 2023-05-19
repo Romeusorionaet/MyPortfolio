@@ -2,8 +2,8 @@ interface PropsProject {
   previewDesktop: string;
   previewMobile: string;
   title: string;
-  link: string;
-  AOSanimation: string;
+  link?: string;
+  AOSanimation?: string;
 }
 
 export function Project({previewDesktop, previewMobile, title, link, AOSanimation}: PropsProject) {
@@ -15,7 +15,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
             <div className='h-15 p-4 relative'>
 
               <img 
-                className='rounded-3xl h-full' 
+                className='rounded-3xl h-full w-full ' 
                 src={previewDesktop} 
                 alt='projeto preview desktop' 
                 />
@@ -34,7 +34,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
             </div>
 
             <button 
-            className="rounded-full w-8 shadow-lg border-t-2 hover:border-black delay-200 active:border-green-400">
+            className="rounded-full w-8 shadow-lg border-t-2 active:border-green-400">
               <a href={link} target="blank">{title}</a>
             </button>
         </div>
