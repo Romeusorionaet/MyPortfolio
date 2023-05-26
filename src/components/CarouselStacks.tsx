@@ -10,6 +10,7 @@ import javascriptLogo from '../assets/stacks/javascriptLogo.png';
 import htmlLogo from '../assets/stacks/htmlLogo.png';
 import cssLogo from '../assets/stacks/cssLogo.png';
 import tailwindcss from '../assets/stacks/tailwindcssLogo.svg';
+import nextjs from '../assets/stacks/nextjs.svg';
 
 const carousel: KeenSliderPlugin = (slider) => {
   const z = 300
@@ -115,6 +116,18 @@ export function CarouselStacks() {
                 Tailwind CSS é uma biblioteca de classes CSS pré-definidas que permite a criação de 
                 estilos de página web de forma rápida e consistente. É conhecido por sua abordagem de 
                 "utilitários" e sua facilidade de uso.' 
+              />
+            </div>
+            
+            <div className="carousel__cell card ">
+              <CreatStack
+              title={'Nextjs'}
+                link={'https://nextjs.org/'}
+                file={nextjs}
+                description='
+                Next.js é um framework React de código aberto usado para criar 
+                aplicativos web modernos, oferecendo renderização no lado do 
+                servidor, rotas dinâmicas, geração estática e muito mais.' 
               />
             </div>
 

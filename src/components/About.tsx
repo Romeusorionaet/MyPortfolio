@@ -4,11 +4,11 @@ export function About() {
 
     return(
         <div
-          className='relative my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:pr-16 desktop:gap-80'>
+          className='relative my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:px-16'>
 
           <div 
             data-aos="fade-right"
-            className='w-20 z-10 bg-BG-rgba-2 rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
+            className='w-20 z-10 bg-rgba-2 rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
 
             <p>
               Eu sou Romeu soares, tenho 24 anos e sou Web Developer Frontend júnior, com experiência nas principais ferramentas
