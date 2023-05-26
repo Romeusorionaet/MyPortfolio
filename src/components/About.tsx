@@ -4,11 +4,11 @@ export function About() {
 
     return(
         <div
-          className='relative my-15 tablet:p-4 w-full flex justify-center items-center flex-col tablet:flex-row tablet:gap-40 tablet:px-16'>
+          className='relative p-10 tablet:p-0'>
 
           <div 
             data-aos="fade-right"
-            className='w-20 z-10 bg-rgba-2 rounded-lg p-4 flex flex-col gap-4 desktop:w-40'>
+            className='z-10 bg-rgba-2 rounded-lg p-4 flex flex-col gap-4'>
 
             <p>
               Eu sou Romeu soares, tenho 24 anos e sou Web Developer Frontend júnior, com experiência nas principais ferramentas
@@ -36,13 +36,7 @@ export function About() {
 
           </div>
 
-          <div 
-            className='mt-20 text-center tablet:-mt-20 pr-6 z-10'>
-            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
-            <CarouselStacks />
-          </div>
-
-          <div className="absolute h-[526px] w-[526px] rounded-full bg-cyan-900 opacity-30 blur-3xl" />
+          <div className="absolute h-[526px] w-[526px] rounded-full bg-red-500 opacity-10 blur-3xl" />
 
         </div>
     )

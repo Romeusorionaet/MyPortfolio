@@ -12,6 +12,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {AiOutlineMail} from 'react-icons/ai';
 import Typing from 'react-typing-animation';
+import { CarouselStacks } from '../components/CarouselStacks';
 
 export function Home() {
   const [githubRepos, setGithubRepos] = useState([])
@@ -34,12 +35,12 @@ export function Home() {
 
       <Header />
 
-      <main className='flex flex-col items-center overflow-hidden'>
+      <main className='flex flex-col items-center overflow-hidden desktop:px-20'>
 
         <div className='h-44 flex items-center justify-center text-center text-3xl'>
 
           <Typing>
-          <Typing.Backspace count={20} />
+            <Typing.Backspace count={20} />
             <p className='text-xl'>
               ROMEU SOARES <br/> DEVELOPER FRONTEND
             </p>
@@ -71,12 +72,19 @@ export function Home() {
           </div>
         </section>
 
-        <section>
-          <About />
+        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-rgba-1 items-center  mt-60 w-full py-10 overflow-hidden'>
+          <div className='w-25 desktop:w-30'>
+            <About />
+          </div>
+
+          <div className='text-center z-10'>
+            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
+            <CarouselStacks />
+          </div>
         </section>
 
         <section 
-          className='bg-rgba-1 tablet:px-10 my-20 tablet:-mt-20 pb-6 rounded-lg text-center'>
+          className='bg-rgba-1 w-full tablet:px-10 my-20 pb-6 rounded-lg text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>

@@ -45,10 +45,10 @@ export function CarouselStacks() {
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000" 
-        className="wrapper"
+        className="mb-20"
       >
         <div className="scene">
-          <div className="carousel keen-slider bg-gradient-to-t from-red-100 rounded-full" ref={sliderStacks}>
+          <div className="carousel keen-slider" ref={sliderStacks}>
             
             <div className="carousel__cell card ">
               <CreatStack
