@@ -72,7 +72,7 @@ export function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-rgba-1 items-center  mt-60 w-full py-10 overflow-hidden'>
+        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-slate-800 items-center mt-60 w-full py-10 overflow-hidden'>
           <div className='w-25 desktop:w-30'>
             <About />
           </div>
@@ -84,7 +84,7 @@ export function Home() {
         </section>
 
         <section 
-          className='bg-rgba-1 w-full tablet:px-10 my-20 pb-6 rounded-lg text-center'>
+          className='bg-slate-800 w-full tablet:px-10 my-20 pb-6 rounded-lg text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>
@@ -124,6 +124,14 @@ export function Home() {
               previewDesktop={'https://bit.ly/3NaXLJu'}
               previewMobile={'https://bit.ly/41Bbm10'}
               AOSanimation='zoom'
+            />
+
+            <Project 
+              title='Todo List' 
+              link={'https://todo-list-murex-iota.vercel.app'}
+              previewDesktop={'https://bit.ly/3WDxnL2'}
+              previewMobile={'https://bit.ly/3MZeb7b'}
+              AOSanimation='zoom-in-left'
             />
 
             <Project 

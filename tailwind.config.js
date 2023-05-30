@@ -8,7 +8,6 @@ export default {
     extend: {
 
       colors:{
-
         rgba: {
           '1': 'rgba(0, 0, 0, 0.10)',
           '2': 'rgba(163, 117, 545, .1)',

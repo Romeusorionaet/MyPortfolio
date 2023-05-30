@@ -37,7 +37,7 @@ export function About() {
 
           </div>
 
-          <div className="absolute h-[526px] w-[526px] rounded-full bg-red-500 opacity-10 blur-3xl" />
+          <div className="absolute h-[526px] w-full rounded-full bg-cyan-500 opacity-10 blur-3xl" />
 
         </div>
     )

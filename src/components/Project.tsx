@@ -10,9 +10,9 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
 
     return(
         <div 
-            className='bg-rgba-2 rounded-3xl mt-10 w-20 mx-auto pb-2'>
+            className='bg-blue-900 rounded-3xl mt-10 w-30 mx-auto pb-2'>
 
-            <div className='h-15 p-4 relative'>
+            <div className='h-15 p-1 pb-2 relative'>
 
               <img 
                 className='rounded-3xl h-full w-full ' 
@@ -22,7 +22,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
 
               <div 
                 data-aos={AOSanimation}
-                className="w-6 h-10 absolute bottom-0 -right-2 bg-MOBILE-PREVIEW bg-cover bg-no-repeat bg-center flex"
+                className="w-6 h-10 absolute bottom-0 -right-6 bg-MOBILE-PREVIEW bg-cover bg-no-repeat bg-center flex"
               >
                  <img 
                   className=' w-4.6 h-8.5 m-auto ' 
