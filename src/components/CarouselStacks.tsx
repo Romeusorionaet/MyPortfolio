@@ -50,7 +50,7 @@ export function CarouselStacks() {
         <div className="scene">
           <div className="carousel keen-slider" ref={sliderStacks}>
             
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
                 title={'React'}
                 link={'https://react.dev/'}
@@ -61,7 +61,7 @@ export function CarouselStacks() {
               />
             </div>
             
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
                 title={'Typescript'}
                 link={'https://www.typescriptlang.org/docs/'}
@@ -73,7 +73,7 @@ export function CarouselStacks() {
               />
             </div>
             
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
               title={'Javascript'}
                 link={'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'}
@@ -84,7 +84,7 @@ export function CarouselStacks() {
               />
             </div>
             
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
               title={'HTML'}
                 link={'https://developer.mozilla.org/pt-BR/docs/Web/HTML'}
@@ -95,7 +95,7 @@ export function CarouselStacks() {
               />
             </div>
 
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
               title={'CSS'}
                 link={'https://developer.mozilla.org/pt-BR/docs/Web/CSS'}
@@ -107,7 +107,7 @@ export function CarouselStacks() {
               />
             </div>
 
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
               title={'Tailwindcss'}
                 link={'https://tailwindcss.com/'}
@@ -119,7 +119,7 @@ export function CarouselStacks() {
               />
             </div>
             
-            <div className="carousel__cell card ">
+            <div className="carousel__cell card">
               <CreatStack
               title={'Nextjs'}
                 link={'https://nextjs.org/'}

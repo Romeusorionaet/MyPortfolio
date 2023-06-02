@@ -2,14 +2,54 @@
 @tailwind utilities;
 @tailwind components;
 
+* {
+  margin: 0;
+  padding: 0;
+  border: borde-box;
+}
+
+body {
+    @apply 
+    font-Orbitron font-medium tracking-wide bg-gradient-to-t from-blue-800 to-slate-900 
+    min-h-screen text-white-900
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply
+  font-semibold
+}
+
 .iconsFooter {
-    @apply hover:scale-x-110 shadow-lg;
+    @apply 
+    hover:scale-x-110 shadow-lg;
 }
 
 .gitCardAnimation {
-    @apply flex justify-center w-40 flex-wrap overflow-hidden pt-2 rounded-full;
+    @apply 
+    flex justify-center w-40 flex-wrap overflow-hidden pt-2 rounded-full;
 }
 
 .handle-button {
-    @apply hover:bg-blue-500 p-1 rounded-lg active:bg-blue-700;
+    @apply 
+    hover:bg-blue-800 p-1 rounded-lg active:bg-blue-700;
+}
+
+.text-gradient {
+  background: linear-gradient(95deg, #f8fafc, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+      width: 2px;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: gray;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: cyan;
+    }
 }

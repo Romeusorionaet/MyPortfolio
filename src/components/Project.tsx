@@ -10,12 +10,12 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
 
     return(
         <div 
-            className='bg-blue-900 rounded-3xl mt-10 w-30 mx-auto pb-2'>
+            className='bg-blue-800/60 rounded-3xl mt-10 w-30 mx-auto pb-2'>
 
             <div className='h-15 p-1 pb-2 relative'>
 
               <img 
-                className='rounded-3xl h-full w-full ' 
+                className='rounded-3xl h-full w-full object-cover' 
                 src={previewDesktop} 
                 alt='projeto preview desktop' 
                 />
@@ -34,7 +34,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
             </div>
 
             <button 
-            className="rounded-full w-8 shadow-lg border-t-2 active:border-green-400">
+            className="rounded-full w-8 shadow-lg text-sm border-t-2 active:border-green-400">
               <a href={link} target="blank">{title}</a>
             </button>
         </div>

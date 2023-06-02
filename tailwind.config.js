@@ -28,7 +28,7 @@ export default {
       },
 
       fontFamily: {
-        'ROBOTO': 'Roboto, sans-serif'
+        'Orbitron': 'Orbitron, sans-serif'
       },
 
       height:{
@@ -40,6 +40,8 @@ export default {
         '9': '9rem',
         '10': '10rem',
         '15': '15rem',
+        '30': '30rem',
+        '40': '40rem',
       },
 
       width:{

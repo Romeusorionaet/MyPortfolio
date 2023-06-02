@@ -19,10 +19,12 @@ export function CreatStack({description, file, link, title}: PropsStack) {
               />
             </div>
 
-            <h3 className='mb-1 mt-2 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>{title}</h3>
+            <h3 className='mb-1 mt-2 text-xl [text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>
+              {title}
+            </h3>
 
             <div className=" h-9 mb-4">
-              <p className='h-40 text-justify text-zinc-900'>
+              <p className='h-40 text-justify text-sm text-gradient'>
                 {description}
               </p>
             </div>

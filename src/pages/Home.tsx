@@ -2,17 +2,17 @@ import {Header} from '../components/Header';
 import {Footer} from '../components/Footer';
 import {GitCard} from '../components/GitCard';
 import {Project} from '../components/Project';
-import {About} from '../components/About';
+import {TextAboutStacks} from '../components/TextAboutStacks';
+import { CarouselStacks } from '../components/CarouselStacks';
+import { Avatar } from '../components/Avatar';
+import { AboutMe } from '../components/AboutMe';
 
-import romeuImg1 from '../assets/ImgProfiles/romeuImg1.png';
 import bgInProduction from '../assets/bg-InProduction.jpg'
 
 import { useEffect, useState } from 'react';
+import {AiOutlineMail} from 'react-icons/ai';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import {AiOutlineMail} from 'react-icons/ai';
-import Typing from 'react-typing-animation';
-import { CarouselStacks } from '../components/CarouselStacks';
 
 export function Home() {
   const [githubRepos, setGithubRepos] = useState([])
@@ -37,44 +37,14 @@ export function Home() {
 
       <main className='flex flex-col items-center overflow-hidden desktop:px-20'>
 
-        <div className='h-44 flex items-center justify-center text-center text-3xl'>
-
-          <Typing>
-            <Typing.Backspace count={20} />
-            <p className='text-xl'>
-              ROMEU SOARES <br/> DEVELOPER FRONTEND
-            </p>
-          </Typing>
-          
-        </div>
-
-        <section className="gitCardAnimation">
-          {
-            Array.from({length: 43}).map((_, index)=>{
-              return(
-                <div key={String(index)} className='opacity-10'>
-                  <GitCard 
-                  key={String(index)} 
-                  index={index} 
-                  />
-                </div>
-              )
-            }) 
-          }
-          <div 
-            className='w-80 overflow-hidden flex justify-center absolute rounded-full'>
-              
-             <img
-             className='-m-24 mb-0'
-             src={romeuImg1} 
-             alt='Romeu soares' 
-             />
-          </div>
+        <section className='flex flex-col gap-20 desktop:gap-40 pb-1 tablet:flex-row justify-between items-center tablet:h-screen max-w-[95%]'>
+          <Avatar />
+          <AboutMe />
         </section>
 
-        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-slate-800 items-center mt-60 w-full py-10 overflow-hidden'>
+        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-blue-900 items-center w-full py-10 rounded-lg overflow-hidden'>
           <div className='w-25 desktop:w-30'>
-            <About />
+            <TextAboutStacks />
           </div>
 
           <div className='text-center z-10'>
@@ -84,7 +54,7 @@ export function Home() {
         </section>
 
         <section 
-          className='bg-slate-800 w-full tablet:px-10 my-20 pb-6 rounded-lg text-center'>
+          className='bg-blue-900 w-full px-5 tablet:px-10 my-20 pb-6 rounded-lg text-center'>
 
           <div>
             <h2 className='text-2xl my-1'>Meus Projetos Principais</h2>

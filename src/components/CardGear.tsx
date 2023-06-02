@@ -24,7 +24,7 @@ export function CardGear({image, title, description, link}: PropsGear) {
                 <div className="mt-10 w-20 text-center">
                     <h2>{title}</h2>
 
-                    <p className="my-1 px-1 h-4 overflow-auto scroll-smooth hover:scroll-auto">
+                    <p className="my-1 px-1 h-4 overflow-hidden hover:overflow-auto scroll-smooth hover:scrollbar">
                         {description}
                     </p>
                 </div>
