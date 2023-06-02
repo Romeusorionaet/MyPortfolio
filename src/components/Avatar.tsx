@@ -9,12 +9,14 @@ export function Avatar() {
             src={romeuImg1} 
             alt='Romeu soares' 
             />
-            <Typing>
-                <Typing.Backspace count={20} />
-                <h1 className='text-xl text-center'>
-                ROMEU SOARES <br/> DEVELOPER FRONTEND
-                </h1>
-            </Typing>
+            <div className='h-6'>
+                <Typing>
+                    <Typing.Backspace count={20} />
+                    <h1 className='text-xl text-center'>
+                    ROMEU SOARES <br/> DEVELOPER FRONTEND
+                    </h1>
+                </Typing>
+            </div>
         </section>
     )
 }

@@ -7,6 +7,10 @@ interface PropsProject {
 }
 
 export function Project({previewDesktop, previewMobile, title, link, AOSanimation}: PropsProject) {
+    const isInProduction = AOSanimation ? 
+    'p-2 rounded-full shadow-lg text-sm border-t-2 active:border-green-400' 
+    : 
+    'p-2 rounded-full border-t-2 opacity-90 cursor-not-allowed'
 
     return(
         <div 
@@ -34,7 +38,7 @@ export function Project({previewDesktop, previewMobile, title, link, AOSanimatio
             </div>
 
             <button 
-            className="rounded-full w-8 shadow-lg text-sm border-t-2 active:border-green-400">
+            className={isInProduction}>
               <a href={link} target="blank">{title}</a>
             </button>
         </div>

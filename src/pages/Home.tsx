@@ -42,17 +42,6 @@ export function Home() {
           <AboutMe />
         </section>
 
-        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-blue-900 items-center w-full py-10 rounded-lg overflow-hidden'>
-          <div className='w-25 desktop:w-30'>
-            <TextAboutStacks />
-          </div>
-
-          <div className='text-center z-10'>
-            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
-            <CarouselStacks />
-          </div>
-        </section>
-
         <section 
           className='bg-blue-900 w-full px-5 tablet:px-10 my-20 pb-6 rounded-lg text-center'>
 
@@ -113,8 +102,19 @@ export function Home() {
 
         </section>
 
+        <section className='flex flex-col desktop:flex-row desktop:justify-evenly gap-20 bg-blue-900 items-center w-full py-10 rounded-lg overflow-hidden'>
+          <div className='max-w-25 px-4 desktop:w-30'>
+            <TextAboutStacks />
+          </div>
+
+          <div className='text-center z-10'>
+            <h2 className='text-2xl mb-40'>STACK PRINCIPAIS</h2>
+            <CarouselStacks />
+          </div>
+        </section>
+
         <section 
-            className="flex mb-4 justify-center items-center gap-2 flex-col tablet:flex-row tablet:gap-8">
+            className="flex my-4 justify-center items-center gap-2 flex-col tablet:flex-row tablet:gap-8">
             <AiOutlineMail className="text-9xl"/>
 
             <a 
