@@ -1,7 +1,7 @@
 export function AboutMe() {
     return(
         <div 
-        className='tablet:w-[35rem] h-[40rem] tablet:-mt-[8rem] border border-cyan-500/10 overflow-hidden hover:overflow-auto hover:scrollbar scroll-smooth'>
+        className='tablet:w-[35rem] tablet:h-[40rem] tablet:-mt-[8rem] border border-cyan-500/10 tablet:overflow-hidden tablet:hover:overflow-auto tablet:hover:scrollbar tablet:scroll-smooth'>
             <div className="max-w-[96%] pl-2 text-gradient">
                 <p>
                 Meu nome é <strong>Romeu Soares de Souto</strong>, <br />

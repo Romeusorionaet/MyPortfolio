@@ -1,7 +1,7 @@
 export function TextAboutStacks() {
     return(
         <div
-          className='relative p-10 tablet:p-0'>
+          className='relative'>
 
           <div 
             data-aos="fade-right"
