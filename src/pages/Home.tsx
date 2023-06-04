@@ -8,9 +8,9 @@ import { Avatar } from '../components/Avatar';
 import { AboutMe } from '../components/AboutMe';
 
 import bgInProduction from '../assets/bg-InProduction.jpg'
+import emailAvatar from '../assets/emailAvatar.svg'
 
 import { useEffect, useState } from 'react';
-import {AiOutlineMail} from 'react-icons/ai';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -113,15 +113,16 @@ export function Home() {
           </div>
         </section>
 
-        <section 
-            className="flex my-4 justify-center items-center gap-2 flex-col tablet:flex-row tablet:gap-8">
-            <AiOutlineMail className="text-9xl"/>
+        
 
+        <section 
+            className="flex my-4 justify-center items-center flex-col">
             <a 
             className='handle-button'
             href="mailto:romeusoares14569@gmail.com">
                 Clique aqui e envie um email
             </a>
+            <img src={emailAvatar} alt='' />
         </section>
 
         <section className="gitCardAnimation h-2">
