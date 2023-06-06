@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 [class^="card"],
 [class*=" card"] {
   display: flex;

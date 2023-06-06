@@ -60,7 +60,7 @@ export function Home() {
             </p>
           </div>
 
-          <div className='flex flex-wrap tablet:gap-12 gap-4'>
+          <div className='flex flex-wrap tablet:gap-4'>
             <Project 
               title='Explorer Food' 
               link={'https://myfrontendfood.netlify.app'}
@@ -94,6 +94,14 @@ export function Home() {
             />
 
             <Project 
+              title='Yougioh Cards pro' 
+              link={'https://yougioh-card-pro.vercel.app'}
+              previewDesktop={'https://bit.ly/3IYBiwr'}
+              previewMobile={'https://bit.ly/42qWd1R'}
+              AOSanimation='zoom-in-left'
+            />
+
+            <Project 
               title='Em produção' 
               previewDesktop={bgInProduction}
               previewMobile={bgInProduction}
@@ -112,8 +120,6 @@ export function Home() {
             <CarouselStacks />
           </div>
         </section>
-
-        
 
         <section 
             className="flex my-4 justify-center items-center flex-col">
