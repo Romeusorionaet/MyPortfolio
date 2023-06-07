@@ -1,34 +1,26 @@
-
 interface PropsGear {
-    image: string;
-    title: string;
-    description: string;
-    link: string;
+  image: string
+  title: string
+  description: string
+  link: string
 }
 
-export function CardGear({image, title, description, link}: PropsGear) {
+export function CardGear({ image, title, description, link }: PropsGear) {
+  return (
+    <div className="mt-10 px-2 hover:bg-zinc-600 rounded-lg">
+      <div className="h-10 flex justify-center pt-2">
+        <a href={link} target="blank">
+          <img className="h-10 rounded-lg" src={image} alt="definir" />
+        </a>
+      </div>
 
-    return(
-        <div className="mt-10 px-2 hover:bg-zinc-600 rounded-lg">
+      <div className="mt-10 w-20 text-center">
+        <h2>{title}</h2>
 
-                <div className='h-10 flex justify-center pt-2'>
-                    <a href={link} target='blank'>
-                        <img 
-                        className="h-10 rounded-lg"
-                        src={image}  
-                        alt='definir' 
-                        />
-                    </a>
-                </div>
-
-                <div className="mt-10 w-20 text-center">
-                    <h2>{title}</h2>
-
-                    <p className="my-1 px-1 h-4 overflow-hidden hover:overflow-auto scroll-smooth hover:scrollbar">
-                        {description}
-                    </p>
-                </div>
-
-        </div>
-    )
+        <p className="my-1 px-1 h-4 overflow-hidden hover:overflow-auto scroll-smooth hover:scrollbar">
+          {description}
+        </p>
+      </div>
+    </div>
+  )
 }

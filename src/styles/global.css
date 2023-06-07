@@ -29,11 +29,6 @@ h1, h2, h3, h4, h5, h6 {
     flex justify-center w-40 flex-wrap overflow-hidden pt-2 rounded-full;
 }
 
-.handle-button {
-    @apply 
-    hover:bg-blue-800 p-1 rounded-lg active:bg-blue-700;
-}
-
 .text-gradient {
   background: linear-gradient(95deg, #f8fafc, #cbd5e1);
   -webkit-background-clip: text;
