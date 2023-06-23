@@ -1,12 +1,9 @@
-import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { CardGear } from '../components/CardGear'
 
 export function Gear() {
   return (
     <div className="min-h-screen bg-gradient-to-t from-blue-800 to-slate-900 pt-20">
-      <Header />
-
       <h1 className="ml-1 mt-2 tablet:px-36">Meu SetUp</h1>
 
       <section className="mb-10 flex gap-6 flex-wrap justify-center px-4 tablet:px-20">

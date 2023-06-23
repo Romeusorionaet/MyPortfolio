@@ -5,7 +5,7 @@ import { CarouselStacks } from './CarouselStacks'
 import { Avatar } from './Avatar'
 import { AboutMe } from './AboutMe'
 
-import bgInProduction from '../assets/bg-InProduction.jpg'
+import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import emailAvatar from '../assets/emailAvatar.svg'
 import { useEffect, useState } from 'react'
 
@@ -51,7 +51,7 @@ export function Main() {
           </p>
         </div>
 
-        <div className="flex flex-wrap tablet:gap-4">
+        <div className="flex flex-wrap tablet:gap-4 text-start">
           <Project
             title="Explorer Food"
             link={'https://myfrontendfood.netlify.app'}
@@ -66,14 +66,6 @@ export function Main() {
             previewDesktop={'https://bit.ly/3LelSFM'}
             previewMobile={'https://bit.ly/3LriNT3'}
             AOSanimation="flip-right"
-          />
-
-          <Project
-            title="Rocket Movie"
-            link={'https://movienote.netlify.app'}
-            previewDesktop={'https://bit.ly/3NaXLJu'}
-            previewMobile={'https://bit.ly/41Bbm10'}
-            AOSanimation="zoom"
           />
 
           <Project
@@ -99,12 +91,13 @@ export function Main() {
             previewMobile={'https://bit.ly/46isknG'}
             AOSanimation="zoom"
           />
+        </div>
 
-          <Project
-            title="Em produção"
-            previewDesktop={bgInProduction}
-            previewMobile={bgInProduction}
-          />
+        <div className="mt-4 flex gap-6 items-center justify-center">
+          <a href="/FullProjects">
+            <p>Ver Todos</p>
+          </a>
+          <BsFillArrowRightCircleFill />
         </div>
       </section>
 
