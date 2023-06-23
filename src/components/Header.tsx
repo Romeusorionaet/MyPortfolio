@@ -8,10 +8,10 @@ export function Header() {
         ROMEU SOARES
       </NavLink>
 
-      <nav className="flex gap-5 tablet:gap-16 text-2xl max-tablet:text-lg">
+      <nav className="flex gap-5 tablet:gap-16 max-tablet:text-sm desktop:text-lg">
         <NavLink to="/Insignias">Insígnias</NavLink>
         <NavLink to="/FullProjects">Projetos</NavLink>
-        <NavLink to="/Gear" className="flex items-center">
+        <NavLink to="/Gear" className="flex items-center max-tablet:pr-2">
           <GiGears />
         </NavLink>
       </nav>
