@@ -6,7 +6,7 @@ import { arrayInsignias } from './components/InsigniasRocketseat'
 export function Insignias() {
   return (
     <div>
-      <div className="flex flex-1 justify-center items-center gap-5 w-full p-6">
+      <div className="flex flex-1 justify-center items-center gap-5 w-full p-6 fixed">
         <NavLink to={'/'}>
           <HiArrowCircleLeft
             size={28}
@@ -26,7 +26,7 @@ export function Insignias() {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-[4rem] mt-10 mx-[10rem]">
+      <div className="flex flex-wrap justify-center gap-[4rem] pt-[10rem] tablet:mx-[10rem]">
         {arrayInsignias.map((insignia) => {
           return (
             <div key={insignia.id}>
