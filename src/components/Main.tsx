@@ -93,6 +93,14 @@ export function Main() {
           />
 
           <Project
+            title="Coffe Delivery"
+            link={'https://coffee-delivery-amber-phi.vercel.app'}
+            previewDesktop={'https://bit.ly/43UDqO9'}
+            previewMobile={'https://bit.ly/46isknG'}
+            AOSanimation="zoom"
+          />
+
+          <Project
             title="Em produção"
             previewDesktop={bgInProduction}
             previewMobile={bgInProduction}
