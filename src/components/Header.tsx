@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export function Header() {
   return (
-    <section className="w-full bg-blue-900 flex p-3 tablet:px-40 justify-between fixed top-0 z-20">
+    <section className="w-full bg-blue-900 flex p-3 tablet:px-40 justify-between items-center fixed top-0 z-20">
       <NavLink to="/" className="max-tablet:text-sm">
         ROMEU SOARES
       </NavLink>

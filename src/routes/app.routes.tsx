@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import { Gear } from '../pages/Gear'
-import { Insignias } from '../pages/Insignias'
+import { Insignias } from '../pages/insignias/Insignias'
 import { Home } from '../pages/Home'
 
 export function AppRoutes() {
