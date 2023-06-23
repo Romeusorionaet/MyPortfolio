@@ -5,7 +5,7 @@ import { arrayInsignias } from './components/InsigniasRocketseat'
 
 export function Insignias() {
   return (
-    <div>
+    <div className="pt-[4rem]">
       <div className="flex flex-1 justify-center items-center gap-5 w-full p-6 fixed">
         <NavLink to={'/'}>
           <HiArrowCircleLeft
