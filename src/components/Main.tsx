@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { NavLink } from 'react-router-dom'
 
 export function Main() {
   const [githubRepos, setGithubRepos] = useState([])
@@ -94,9 +95,9 @@ export function Main() {
         </div>
 
         <div className="mt-4 flex gap-6 items-center justify-center">
-          <a href="/FullProjects">
+          <NavLink to="/FullProjects">
             <p>Ver Todos</p>
-          </a>
+          </NavLink>
           <BsFillArrowRightCircleFill />
         </div>
       </section>

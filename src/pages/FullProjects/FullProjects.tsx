@@ -1,7 +1,15 @@
 import { Project } from '../../components/Project'
 import bgInProduction from '../../assets/bg-InProduction.jpg'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export function FullProjects() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <div className="flex justify-center items-center overflow-hidden pb-8">
       <div className="flex flex-wrap tablet:gap-4 pt-[6rem] text-end">
@@ -51,6 +59,18 @@ export function FullProjects() {
           previewDesktop={'https://bit.ly/43UDqO9'}
           previewMobile={'https://bit.ly/46isknG'}
           AOSanimation="zoom"
+        />
+
+        <Project
+          title="Rocket Notes"
+          link={'https://rocketseatnotes.netlify.app'}
+          previewDesktop={
+            'https://github.com/Romeusorionaet/FRONTEND-RocketNotes/blob/master/src/assets/preview/previewRocketNotesDesktop.png?raw=true'
+          }
+          previewMobile={
+            'https://github.com/Romeusorionaet/FRONTEND-RocketNotes/blob/master/src/assets/preview/previewRocketNotesMobile.png?raw=true'
+          }
+          AOSanimation="flip-right"
         />
 
         <Project
