@@ -92,6 +92,30 @@ export function FullProjects() {
         />
 
         <Project
+          title="Focus Timer"
+          link={'https://romeusorionaet.github.io/FocusTimer/'}
+          previewDesktop={
+            'https://github.com/Romeusorionaet/FocusTimer/blob/master/img/preview/previewFocusTimerDesktop.png?raw=true'
+          }
+          previewMobile={
+            'https://github.com/Romeusorionaet/FocusTimer/blob/master/img/preview/previewFocusTimerMobile.png?raw=true'
+          }
+          AOSanimation="flip-right"
+        />
+
+        <Project
+          title="Space Nails"
+          link={'https://nails-1l0majvwq-romeusorionaet.vercel.app'}
+          previewDesktop={
+            'https://github.com/Romeusorionaet/Nails/blob/master/img/preview/previewNailsDesktop.png?raw=true'
+          }
+          previewMobile={
+            'https://github.com/Romeusorionaet/Nails/blob/master/img/preview/previewNailsMobile.png?raw=true'
+          }
+          AOSanimation="zoom-in-left"
+        />
+
+        <Project
           title="Em produção"
           previewDesktop={bgInProduction}
           previewMobile={bgInProduction}
