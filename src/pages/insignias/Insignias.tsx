@@ -36,7 +36,7 @@ export function Insignias() {
       <div className="flex flex-wrap justify-center gap-[4rem] pt-[10rem] tablet:mx-[10rem]">
         {arrayInsignias.map((insignia) => {
           return (
-            <div className="h-10 flex justify-end" key={insignia.id}>
+            <div className="h-[12rem] flex justify-end" key={insignia.id}>
               <PopoverInsignias
                 id={insignia.id}
                 img={insignia.img}

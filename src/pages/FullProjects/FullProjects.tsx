@@ -80,6 +80,18 @@ export function FullProjects() {
         />
 
         <Project
+          title="Ignite Timer"
+          link={'https://ignite-timer-five-mu.vercel.app'}
+          previewDesktop={
+            'https://github.com/Romeusorionaet/Ignite-Timer/blob/main/src/assets/preview/previewIgniteTimerDesktop.png?raw=true'
+          }
+          previewMobile={
+            'https://github.com/Romeusorionaet/Ignite-Timer/blob/main/src/assets/preview/previewIgniteTimerMobile.png?raw=true'
+          }
+          AOSanimation="zoom"
+        />
+
+        <Project
           title="Em produção"
           previewDesktop={bgInProduction}
           previewMobile={bgInProduction}

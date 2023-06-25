@@ -26,7 +26,7 @@ export function PopoverInsignias({
         <Button>
           <img
             className="w-8 tablet:w-[150px] tablet:h-[150px] tablet:m-1 
-                hover:shadow-xl hover:shadow-blue-900 hover:-translate-y-3.5 
+                hover:shadow-xl hover:shadow-cyan-800 hover:-translate-y-3.5 
                 duration-300 rounded-3xl active:translate-y-[50px]"
             src={img}
             alt=""
