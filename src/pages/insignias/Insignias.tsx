@@ -3,9 +3,16 @@ import { NavLink } from 'react-router-dom'
 import { PopoverInsignias } from './components/PopoverInsignias'
 import { arrayInsignias } from './components/InsigniasRocketseat'
 
+import { motion } from 'framer-motion'
+
 export function Insignias() {
   return (
-    <div className="pt-[4rem]">
+    <motion.div
+      className="pt-[4rem]"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="flex flex-1 justify-center items-center gap-5 w-full p-6 fixed">
         <NavLink to={'/'}>
           <HiArrowCircleLeft
@@ -41,6 +48,6 @@ export function Insignias() {
           )
         })}
       </div>
-    </div>
+    </motion.div>
   )
 }

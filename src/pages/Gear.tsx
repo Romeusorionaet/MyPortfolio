@@ -1,9 +1,15 @@
 import { Footer } from '../components/Footer'
 import { CardGear } from '../components/CardGear'
+import { motion } from 'framer-motion'
 
 export function Gear() {
   return (
-    <div className="min-h-screen bg-gradient-to-t from-blue-800 to-slate-900 pt-20">
+    <motion.div
+      className="min-h-screen bg-gradient-to-t from-blue-800 to-slate-900 pt-20"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <h1 className="ml-1 mt-2 tablet:px-36">Meu SetUp</h1>
 
       <section className="mb-10 flex gap-6 flex-wrap justify-center px-4 tablet:px-20">
@@ -150,6 +156,6 @@ export function Gear() {
       </section>
 
       <Footer />
-    </div>
+    </motion.div>
   )
 }

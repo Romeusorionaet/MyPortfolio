@@ -2,6 +2,7 @@ import { Project } from '../../components/Project'
 import bgInProduction from '../../assets/bg-InProduction.jpg'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export function FullProjects() {
   const { pathname } = useLocation()
@@ -11,7 +12,12 @@ export function FullProjects() {
   }, [pathname])
 
   return (
-    <div className="flex justify-center items-center overflow-hidden pb-8">
+    <motion.div
+      className="flex justify-center items-center overflow-hidden pb-8"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="flex flex-wrap tablet:gap-4 pt-[6rem] text-end">
         <Project
           title="Explorer Food"
@@ -79,6 +85,6 @@ export function FullProjects() {
           previewMobile={bgInProduction}
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
