@@ -1,6 +1,6 @@
 import { useKeenSlider, KeenSliderPlugin } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import '../styles/styleCarouselStacks.css'
+import '../styles/components/styleCarouselStacks.css'
 
 import { CreatStack } from '../components/CreatStack'
 
