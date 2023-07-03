@@ -104,6 +104,18 @@ export function FullProjects() {
         />
 
         <Project
+          title="Github Blog"
+          link={'https://my-github-blog.vercel.app'}
+          previewDesktop={
+            'https://github.com/Romeusorionaet/MyGithubBlog/blob/main/src/assets/preview/previewMyGithubBlogDesktop.png?raw=true'
+          }
+          previewMobile={
+            'https://github.com/Romeusorionaet/MyGithubBlog/blob/main/src/assets/preview/previewMyGithubBlogMobile.png?raw=true'
+          }
+          AOSanimation="zoom-in-left"
+        />
+
+        <Project
           title="Em produção"
           previewDesktop={bgInProduction}
           previewMobile={bgInProduction}
